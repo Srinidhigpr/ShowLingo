@@ -5,7 +5,8 @@
     "description": "Capture phrases from your favorite youtube videos and learn how to use them in personal and professional communication",
     "action": {
       "default_popup": "popup.html",
-      "default_title": "ShowLingo"
+      "default_title": "ShowLingo", 
+      "default_icon": "logo.jpg"
     },
     "permissions": [
       "activeTab",
