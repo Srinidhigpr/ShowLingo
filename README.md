@@ -66,4 +66,3 @@ For inquiries, suggestions, or support, please contact us at [support@example.co
 ---
 -->
 Happy learning with **ShowLingo**! 🗣️🎉 
-

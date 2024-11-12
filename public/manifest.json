@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "ShowLingo",
+  "version": "0.0.1",
+  "description": "Capture phrases from your favorite youtube videos and learn how to use them in personal and professional communication",
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "ShowLingo"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://*/*",
+    "http://*/*" 
+  ],
+  "icons": {
+    "32": "logo.png"
+  }
+} 
