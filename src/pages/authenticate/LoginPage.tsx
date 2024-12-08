@@ -18,7 +18,7 @@ import { CustomInput } from "components/CustomInput";
 import { postRegister } from "api/requests/auth/postRegister";
 
 export const LoginPage: FC = memo(() => {
-  const { user, saveUser } = useUserStorage();
+  const { user, saveUser, refreshWebsite, saveToken } = useUserStorage();
   const navigate = useNavigate();
 
   const [userName, setUserName] = useState<string>("");
@@ -88,8 +88,11 @@ export const LoginPage: FC = memo(() => {
       }
 
       saveUser(data?.user);
+      saveToken(data?.token);
       setLoginError("");
       setLoginSuccess(data?.message);
+
+      refreshWebsite();
 
       setTimeout(() => {
         navigate(PagePath.Dashboard, { replace: true });
@@ -123,8 +126,12 @@ export const LoginPage: FC = memo(() => {
       }
 
       saveUser(data?.user);
+      saveToken(data?.token);
+
       setLoginError("");
       setLoginSuccess(data?.message);
+
+      refreshWebsite();
 
       setTimeout(() => {
         navigate(PagePath.Dashboard, { replace: true });

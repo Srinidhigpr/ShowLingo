@@ -7,16 +7,12 @@
     "default_popup": "index.html",
     "default_title": "ShowLingo"
   },
-  "permissions": [
-    "activeTab",
-    "scripting",
-    "storage"
-  ],
-  "host_permissions": [
-    "https://*/*",
-    "http://*/*" 
-  ],
+  "permissions": ["activeTab", "scripting", "storage"],
+  "host_permissions": ["https://*/*", "http://*/*"],
   "icons": {
     "32": "logo.png"
+  },
+  "background": {
+    "service_worker": "bg.js"
   }
-} 
+}

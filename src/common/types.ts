@@ -1,5 +1,5 @@
 export type UserType = {
-  id: string;
+  _id: string;
   name: string;
 };
 
@@ -18,6 +18,7 @@ export type AuthType = {
     name: string;
     _id: string;
   };
+  token?: string;
 };
 
 export enum Env {
